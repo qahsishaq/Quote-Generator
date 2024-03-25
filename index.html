@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+	, initial-scale=1.0"
+    />
+    <title>Quote of the day</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sofia&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia&effect=fire|neon|outline"
+    />
+  </head>
+  <body>
+    <div class="quote-box">
+      <h2 class="font-effect-outline">Quote of the day</h2>
+      <blockquote id="quote">Loading...</blockquote>
+      <span id="author">Loading...</span>
+      <div>
+        <button id="new-quote" onclick="fetchQuote(apiUrl)">New Quote</button>
+        <button id="tweetbtn" onclick="tweet()">
+          <img src="./assets/x-twitter.svg" alt="twitter-icon" />Tweet
+        </button>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/f65ffccb95.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="api-quotes.js"></script>
+</html>
